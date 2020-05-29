@@ -1,6 +1,6 @@
-import { LayoutComponent } from './components/layout/layout.component';
 import { RouterModule, Routes } from '@angular/router'
 import { NgModule } from '@angular/core'
+import { MainPageComponent } from './components/main-page/main-page.component';
 
 
 const routes: Routes = [
@@ -9,7 +9,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: LayoutComponent
+        component: MainPageComponent
       },
       {
         path: '',

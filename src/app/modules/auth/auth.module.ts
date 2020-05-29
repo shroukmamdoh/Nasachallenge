@@ -10,23 +10,30 @@ import {
   NbIconModule,
   NbFormFieldModule,
   NbButtonModule,
-  NbInputModule
+  NbInputModule,
+  NbLayoutModule,
+  NbTabsetModule
 } from '@nebular/theme'
-import { RouterModule, Params } from '@angular/router'
+import { RouterModule, Params } from '@angular/router';
+import { LayoutComponent } from './components/layout/layout.component'
 
 
 @NgModule({
-  declarations: [LoginComponent, SignupComponent],
+  declarations: [LoginComponent, SignupComponent, LayoutComponent],
   imports: [
     CommonModule,
+    NbCardModule,
+    NbSpinnerModule,
+    NbIconModule,
+    NbFormFieldModule,
+    NbButtonModule,
+    NbInputModule,
+    NbLayoutModule,
+    NbTabsetModule,
     RouterModule.forChild([
       {
         path: '',
-        component: LoginComponent
-      },
-      {
-        path: 'sign-up',
-        component: SignupComponent
+        component: LayoutComponent
       },
       {
         path: '',

@@ -1,0 +1,34 @@
+nb-layout-header {
+  background-color: #63d5c4;
+  img {
+    height: 60px;
+    margin-left: -17px;
+  }
+}
+
+nb-card {
+  margin-top: 65px;
+
+  nb-tabset {
+    ::ng-deep .tabset {
+      justify-content: center !important;
+    }
+
+    ::ng-deep .tab.active .tab-link {
+      background-color: transparent;
+      color: #63d5c4;
+    }
+
+    ::ng-deep .tab:hover .tab-link {
+      color: #63d5c4;
+    }
+
+    ::ng-deep.tab.active .tab-link::before {
+      background-color: #00bcd4;
+    }
+
+    ::ng-deep .tab:hover .tab-link::before {
+      background-color: #00bcd4;
+    }
+  }
+}
