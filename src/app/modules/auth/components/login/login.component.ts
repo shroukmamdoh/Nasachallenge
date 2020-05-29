@@ -43,7 +43,10 @@ export class LoginComponent implements OnInit {
       this.form.value.password === '12345678'
     ) {
       this.showToast('bottom-end', 'success')
-     this.router.navigate(['home', '']);
+      setTimeout(() => {
+        this.router.navigate(['home', '']);
+      }, 2000)
+
     } else {
       this.showToast('bottom-right', 'danger')
     }
