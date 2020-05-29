@@ -1,1 +1,23 @@
-login
+<form [formGroup]="form" (ngSubmit)="login()">
+  <nb-form-field class="my-2">
+    <nb-icon nbPrefix icon="email-outline" pack="eva"></nb-icon>
+    <input
+      formControlName="userName"
+      fullWidth
+      nbInput
+      placeholder="User name"
+      type="text"
+    />
+  </nb-form-field>
+  <nb-form-field class="my-2">
+    <nb-icon nbPrefix icon="unlock-outline" pack="eva"></nb-icon>
+    <input
+      formControlName="password"
+      type="password"
+      nbInput
+      fullWidth
+      placeholder="Password"
+    />
+  </nb-form-field>
+  <button nbButton  class="my-2" fullWidth>Login</button>
+</form>
