@@ -1,1 +1,40 @@
-<p>header works!</p>
+<div class="header container-fluid">
+  <div class="row">
+    <div class="logo col-6">
+      <img src="../../../../../assets/images/logo8.png" />
+    </div>
+    <div class="user-info col-6">
+      <div class="user-detailes">
+        <div class="avatar">
+          <nb-user
+            size="large"
+            name="User Name"
+            title="Engineer"
+            showTitle="false"
+          ></nb-user>
+        </div>
+        <div class="icons">
+          <div class="msg">
+            <span><nb-icon nbPrefix icon="email" pack="eva"></nb-icon></span>
+            <div class="numbers">5</div>
+          </div>
+
+          <div class="notif">
+            <span><nb-icon nbPrefix icon="bell" pack="eva"></nb-icon></span>
+            <div class="numbers">6</div>
+          </div>
+          <div class="logout" (click)="goToLogin()">
+              <span>logout</span><nb-icon nbPrefix icon="log-out" pack="eva"></nb-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sm-user-info col-6">
+      <div class="sm-user-detailes">
+          <div class="toggle" (click)="toggle()">
+            <span><nb-icon nbPrefix icon="menu" pack="eva"></nb-icon></span>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
